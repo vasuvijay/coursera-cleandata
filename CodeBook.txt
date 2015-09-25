@@ -1,0 +1,24 @@
+Code Book for variables used in the R script:
+1) Xtest <- The sensor data used to test  the model after it has been trained
+2) Xtrain <- The sensor data set used to train the model
+3) Ytest <- Test Data Activity indicators coded 1 though 6 aligned with the test data set Xtest
+4) Ytrain <-Test Data Activity indicators coded 1 though 6 aligned with the test data set Xtrain
+5) subjecttest <- Subject Labels 1 through 30 aligned with the test data set Xtest
+6) subjecttrain <- Subject Labels 1 through 30 aligned with the test data set Xtrain
+7) Xfulltest <- The complete test data set including sensor data, activity indicators and subject labels
+8) Xfulltrain <- The complete test data set including sensor data, activity indicators and subject labels
+9) Xfull <- The full data set incorporating the test and training data sets
+10 )varnames <- Vector of all the feature names (individual meaurement names)
+11) Xsubset1 <- intermediate subset of Xfull removing columns 383 - 423
+12) Xsubset2 <- intermediate subset of Xsubset1 containing data for columns that have the word "mean" in their names
+13) Xsubset3 <- Subset of Xsubset2 after removing all columns with the word "angle" in their names
+14) Xsubset4 <- Subset of Xsubset3 after removing all columns with the word "meanfreq" in their names
+15) Xsubset5 <- Subset of Xsubset1 with columns containing the word "std" in their names
+16) Xsubset6 <- Subset of Xsubset1 with columns containing the word "Activity"
+17) Xsubset7 <- Subset of Xsubset1 with columns containing the word "Subject" 
+18) Xsubset <- The complete subset of required columns
+19) finalset <- Final set with Split data set based on Activity and Subject
+20) finalsetnames <- Column names of the final set
+21) testset <- Intermediate data set of means of relevant data frame columns
+22) newset <- New clean data set of means of features by Activity and Subject
+ 
